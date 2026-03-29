@@ -3,7 +3,7 @@
 Responsive digital agency landing page built with HTML5 and SASS (SCSS) using BEM Methodology, Flexbox, CSS Grid, and modular CSS architecture.
 
 ## 📸 Preview
-![](./assets/preview.svg)
+![](./assets/preview.png)
 
 ## 🚀 Live Demo
 https://sabyrka23.github.io/positivus/
