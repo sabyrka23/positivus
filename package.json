@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sabyrka23/positivus/issues"
   },
-  "homepage": "https://github.com/sabyrka23/positivus#readme"
+  "homepage": "https://github.com/sabyrka23/positivus#readme",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
 }
