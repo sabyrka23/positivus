@@ -964,3 +964,38 @@ h4, .h4 {
     opacity: 0.7;
   }
 }
+
+.process__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.process__accordion {
+  padding: 40px 60px;
+  background-color: var(--color-gray);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .process__accordion:hover {
+    background-color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .process__accordion:active {
+    background-color: var(--color-accent);
+  }
+}
+.process__accordion[open] {
+  background-color: var(--color-accent);
+}
+.process__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  cursor: pointer;
+  pointer-events: none;
+}
