@@ -7,6 +7,10 @@
     row-gap: 30px;
     counter-reset: custom-counter;
     list-style: none;
+
+    @include mobile {
+      row-gap: 20px;
+    }
   }
 
   &__item {
@@ -27,6 +31,10 @@
       background-color: var(--color-accent);
     }
 
+    @include mobile {
+      padding: 30px;
+    }
+
     &[open] {
       --indicatorVerticalRotate: 0deg;
 
@@ -40,16 +48,30 @@
       column-gap: 50px;
       cursor: pointer;
       pointer-events: none;
+
+      @include mobile {
+        column-gap: 28px;
+      }
     }
 
     &-title {
+      @include fluid-text(30, 18);
+
       display: flex;
       align-items: center;
       column-gap: 25px;
 
+      @include mobile {
+        column-gap: 33px;
+      }
+
       &::before {
         content: '0' counter(custom-counter);
         font-size: 2em;
+
+        @include mobile {
+          font-size: 30px;
+        }
       }
     }
 
@@ -57,10 +79,15 @@
       @include flex-center;
       @include square(58px);
 
+      flex-shrink: 0;
       position: relative;
       background-color: var(--color-gray);
       border: var(--border);
       border-radius: 50%;
+
+      @include mobile {
+        width: 30px;
+      }
 
       &::before,
       &::after {
