@@ -76,5 +76,11 @@
         rotate: var(--indicatorVerticalRotate);
       }
     }
+
+    &-body {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: var(--border);
+    }
   }
 }

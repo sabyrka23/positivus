@@ -1039,3 +1039,8 @@ h4, .h4 {
 .process__accordion-indicator::after {
   rotate: var(--indicatorVerticalRotate);
 }
+.process__accordion-body {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: var(--border);
+}
