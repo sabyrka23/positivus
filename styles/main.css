@@ -782,10 +782,12 @@ h4, .h4 {
     margin-bottom: 40px;
   }
 }
-.hero__button {
-  width: 100%;
-  max-width: 390px;
-  margin-inline: auto;
+@media (max-width: 767px) {
+  .hero__button {
+    width: 100%;
+    max-width: 390px;
+    margin-inline: auto;
+  }
 }
 .hero__partners-list {
   display: flex;

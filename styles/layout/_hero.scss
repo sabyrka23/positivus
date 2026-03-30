@@ -49,9 +49,11 @@
   }
 
   &__button {
-    width: 100%;
-    max-width: 390px;
-    margin-inline: auto;
+    @include mobile {
+      width: 100%;
+      max-width: 390px;
+      margin-inline: auto;
+    }
   }
 
   &__partners {
