@@ -8,5 +8,9 @@
   &__button {
     align-self: end;
     min-height: 269px;
+
+    @include mobile-s {
+      width: 100%;
+    }
   }
 }
