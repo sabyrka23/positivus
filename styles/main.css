@@ -978,7 +978,11 @@ h4, .h4 {
   }
 }
 .process__item {
+  --counterCountent: counter(custom-counter);
   counter-increment: custom-counter;
+}
+.process__item:nth-child(-n+9) {
+  --counterCountent: '0' counter(custom-counter);
 }
 .process__accordion {
   --indicatorVerticalRotate: 90deg;
@@ -1033,7 +1037,7 @@ h4, .h4 {
   }
 }
 .process__accordion-title::before {
-  content: "0" counter(custom-counter);
+  content: var(--counterCountent);
   font-size: 2em;
 }
 @media (max-width: 767px) {
