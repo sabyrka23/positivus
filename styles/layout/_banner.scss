@@ -1,7 +1,11 @@
-.banner {
-  --bannerimageOffsetY: 24px;
+@use '../helpers' as *;
 
-  padding-block: var(--bannerimageOffsetY);
+.banner {
+  @include tablet-above {
+    --bannerimageOffsetY: 24px;
+
+    padding-block: var(--bannerimageOffsetY);
+  }
 
   &__inner {
     display: flex;
@@ -17,6 +21,14 @@
     align-items: start;
     row-gap: 26px;
     padding: 60px;
+
+    @include tablet {
+      padding: 50px;
+    }
+
+    @include mobile {
+      row-gap: 20px;
+    }
   }
 
   &__description {
@@ -25,5 +37,10 @@
 
   &__image {
     margin-block: calc(var(--bannerimageOffsetY) * -1);
+
+    @include tablet {
+      max-width: 40%;
+      height: auto;
+    }
   }
 }
