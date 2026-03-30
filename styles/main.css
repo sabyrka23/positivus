@@ -539,6 +539,14 @@ h4, .h4 {
 .section--hidden-x {
   overflow-x: hidden;
 }
+.section__header {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.section__description {
+  max-width: 580px;
+}
 
 .hero {
   display: flex;
