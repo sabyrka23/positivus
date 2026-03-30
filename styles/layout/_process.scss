@@ -14,6 +14,8 @@
   }
 
   &__accordion {
+    --indicatorVerticalRotate: 90deg;
+
     padding: 40px 60px;
     background-color: var(--color-gray);
     border: var(--border);
@@ -26,6 +28,8 @@
     }
 
     &[open] {
+      --indicatorVerticalRotate: 0deg;
+
       background-color: var(--color-accent);
     }
 
@@ -46,6 +50,30 @@
       &::before {
         content: '0' counter(custom-counter);
         font-size: 2em;
+      }
+    }
+
+    &-indicator {
+      @include flex-center;
+      @include square(58px);
+
+      position: relative;
+      background-color: var(--color-gray);
+      border: var(--border);
+      border-radius: 50%;
+
+      &::before,
+      &::after {
+        @include abs-center;
+
+        content: '';
+        width: 45%;
+        height: 10%;
+        background-color: var(--color-dark);
+      }
+
+      &::after {
+        rotate: var(--indicatorVerticalRotate);
       }
     }
   }
