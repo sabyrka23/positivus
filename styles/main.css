@@ -1150,7 +1150,7 @@ h4, .h4 {
 }
 .team__button {
   align-self: end;
-  min-height: 269px;
+  min-width: 269px;
 }
 @media (max-width: 480px) {
   .team__button {
